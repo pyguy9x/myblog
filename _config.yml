@@ -96,11 +96,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: jelly
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
     type: git
     repo: https://github.com/pyguy9x/myblog.git
+    branch: gh-pages
 
