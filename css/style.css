@@ -321,7 +321,7 @@ body .h1 {
   display: block;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  color: #2bbc8a;
+  color: #f99157;
   letter-spacing: 0.01em;
   font-weight: 700;
   font-style: normal;
@@ -335,14 +335,14 @@ body .h2 {
   display: block;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  color: #eee;
+  color: #c9c;
   text-transform: none;
   letter-spacing: normal;
   font-weight: bold;
   font-size: 1rem;
 }
 body h3 {
-  color: #eee;
+  color: #c9c;
   text-decoration: underline;
   font-weight: bold;
   font-size: 0.9rem;
@@ -426,7 +426,7 @@ body table {
 body th {
   padding: 8px;
   border-bottom: 1px dashed #908d8d;
-  color: #eee;
+  color: #c9c;
   font-weight: bold;
   font-size: 13px;
 }
@@ -482,7 +482,7 @@ body {
   color: #c9cacc;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Awesome", "Meslo LG", monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
@@ -516,7 +516,7 @@ body {
   background-repeat: repeat-x;
 }
 .content a:hover {
-  background-image: linear-gradient(transparent, transparent 4px, #d480aa 4px, #d480aa);
+  background-image: linear-gradient(transparent, transparent 0px, #d480aa 4px, #d480aa);
 }
 .content a.icon {
   background: none;
@@ -624,7 +624,7 @@ body {
   -webkit-filter: grayscale(100%);
 }
 #header #nav {
-  color: #2bbc8a;
+  color: #f99157;
   letter-spacing: 0.01em;
   font-weight: 200;
   font-style: normal;
@@ -638,10 +638,10 @@ body {
 }
 #header #nav ul a {
   margin-right: 15px;
-  color: #2bbc8a;
+  color: #f99157;
 }
 #header #nav ul a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
+  background-image: linear-gradient(transparent, transparent 5px, #f99157 5px, #f99157);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
@@ -650,7 +650,7 @@ body {
   display: inline-block;
   margin-right: 15px;
   border-right: 1px dotted;
-  border-color: #2bbc8a;
+  border-color: #f99157;
   vertical-align: middle;
 }
 #header #nav ul .icon {
@@ -747,7 +747,7 @@ body {
   margin-left: 15px;
 }
 #header-post #menu-icon:hover {
-  color: #2bbc8a;
+  color: #f99157;
 }
 #header-post #menu-icon-tablet {
   float: right;
@@ -755,7 +755,7 @@ body {
   margin-left: 15px;
 }
 #header-post #menu-icon-tablet:hover {
-  color: #2bbc8a;
+  color: #f99157;
 }
 #header-post #top-icon-tablet {
   position: fixed;
@@ -765,17 +765,17 @@ body {
   margin-left: 15px;
 }
 #header-post #top-icon-tablet:hover {
-  color: #2bbc8a;
+  color: #f99157;
 }
 #header-post .active {
-  color: #2bbc8a;
+  color: #f99157;
 }
 #header-post #menu {
   display: none;
   margin-right: 2rem;
 }
 #header-post #nav {
-  color: #2bbc8a;
+  color: #f99157;
   letter-spacing: 0.01em;
   font-weight: 200;
   font-style: normal;
@@ -786,16 +786,16 @@ body {
 }
 #header-post #nav ul a {
   margin-right: 15px;
-  color: #2bbc8a;
+  color: #f99157;
 }
 #header-post #nav ul a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
+  background-image: linear-gradient(transparent, transparent 5px, #f99157 5px, #f99157);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
 }
 #header-post #nav ul li {
-  border-right: 1px dotted #2bbc8a;
+  border-right: 1px dotted #f99157;
 }
 #header-post #nav ul li:last-child {
   margin-right: 0;
@@ -849,7 +849,7 @@ body {
   font-size: 0.8rem;
 }
 #header-post #toc .toc-level-2:before {
-  color: #2bbc8a;
+  color: #f99157;
   content: "#";
 }
 #header-post #toc .toc-level-3 {
@@ -947,11 +947,11 @@ body {
   text-align: center;
 }
 #footer-post #nav-footer a {
-  color: #2bbc8a;
+  color: #f99157;
   font-size: 1em;
 }
 #footer-post #nav-footer a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #2bbc8a 5px, #2bbc8a);
+  background-image: linear-gradient(transparent, transparent 5px, #f99157 5px, #f99157);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
@@ -982,7 +982,7 @@ body {
 #footer-post #actions-footer a {
   display: inline-block;
   padding-left: 1rem;
-  color: #2bbc8a;
+  color: #f99157;
 }
 #footer-post #share-footer {
   padding-right: 1rem;
@@ -1029,7 +1029,7 @@ body {
   font-size: 0.8rem;
 }
 #footer-post #toc-footer .toc-level-2:before {
-  color: #2bbc8a;
+  color: #f99157;
   content: "#";
 }
 #footer-post #toc-footer .toc-level-3 {
@@ -1115,7 +1115,7 @@ article .content h2:before {
   position: absolute;
   top: -4px;
   left: -1rem;
-  color: #2bbc8a;
+  color: #f99157;
   content: "#";
   font-weight: bold;
   font-size: 1.2rem;
@@ -1344,7 +1344,7 @@ article .content .caption {
   background-image: none;
 }
 .pagination a:hover:not(.active) {
-  color: #eee;
+  color: #c9c;
 }
 .search-input {
   padding: 4px 7px;
@@ -1359,7 +1359,7 @@ article .content .caption {
   -moz-border-radius: 5px;
 }
 .search-input:focus {
-  border: solid 1px #2bbc8a;
+  border: solid 1px #f99157;
 }
 #search-result ul.search-result-list {
   padding: 0;
@@ -1416,7 +1416,7 @@ article .content .caption {
   font-display: swap;
   font-weight: 400;
   font-size: 11.200000000000001px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Awesome", "Meslo LG", monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   text-align: center;
@@ -1586,7 +1586,7 @@ pre {
   border: 1px dotted #908d8d;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Awesome", "Meslo LG", monospace;
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
@@ -1607,7 +1607,7 @@ code {
   padding: 10px 15px;
   border-radius: 4px;
   background: #212326;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Awesome", "Meslo LG", monospace;
   -webkit-border-radius: 4px;
 }
 .highlight figcaption {
@@ -1647,7 +1647,7 @@ code {
   transition: opacity 0.2s ease-in;
 }
 .highlight .btn-copy:hover {
-  color: #2bbc8a;
+  color: #f99157;
 }
 .highlight pre {
   margin: 0;
