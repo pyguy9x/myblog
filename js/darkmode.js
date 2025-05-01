@@ -1,18 +1,42 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('toggle-dark');
-  const body = document.body;
+document.addEventListener('DOMContentLoaded', function() {
+	var style = document.querySelector('#invert')
+	if (style == null) {
+		style = document.createElement('style')
+		style.id = 'invert'
+		document.head.append(style)
+	}
+	var btn = document.querySelector('#dark-mode-btn')
+	if (btn == null) {
+		btn = document.createElement('div')
+		btn.id = 'dark-mode-btn'
+		btn.classList.add('light-logo')
+		document.body.append(btn)
+	}
+	
+	var enableDarkMode = function() {
+		style.innerText = 'html,img,pre,#dark-mode-btn{filter:invert(100%)}'
+		btn.classList.remove('light-logo')
+		btn.classList.add('dark-logo')
+		localStorage.darkLight = 'dark'
+		
+	}
+	var disableDarkMode = function() {
+		style.innerText = ''		
+		btn.classList.remove('dark-logo')
+		btn.classList.add('light-logo')
+		localStorage.darkLight = 'light'
+	}
+	
+	btn.addEventListener('click', function(){
+		var currMode = localStorage.darkLight || 'light'
+		if (currMode == 'light')
+			enableDarkMode()
+		else 
+			disableDarkMode()
+	})
+	
+	if (localStorage.darkLight == 'dark')
+		enableDarkMode()
+	
+})
 
-  // Lấy từ localStorage hoặc dùng class từ config mặc định
-  const saved = localStorage.getItem('theme');
-  if (saved) {
-    body.classList.remove('light', 'dark');
-    body.classList.add(saved);
-  }
-
-  toggle.addEventListener('click', () => {
-    const isDark = body.classList.contains('dark');
-    body.classList.toggle('dark', !isDark);
-    body.classList.toggle('light', isDark);
-    localStorage.setItem('theme', isDark ? 'light' : 'dark');
-  });
-});

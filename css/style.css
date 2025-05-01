@@ -1680,3 +1680,6 @@ body.dark {
   margin-left: 5px;
   color: #999;
 }
+input[type="checkbox"] {
+  accent-color: #2ecc71;
+}
