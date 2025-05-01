@@ -1675,3 +1675,8 @@ body.dark {
   --bg: #121212;
   --text: #eee;
 }
+.hidden-icon {
+  font-size: 0.9em;
+  margin-left: 5px;
+  color: #999;
+}
