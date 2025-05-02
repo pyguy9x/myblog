@@ -1,0 +1,63 @@
+/* Dark mode (mặc định) */
+body {
+    background-color: #1d1f21;
+    color: #c9cacc;
+}
+
+/* ------------------Dark mode */
+[data-theme="dark"] body {
+    background-color: #181a1b;
+    color: #d4d4d4;
+}
+[data-theme="dark"] blockquote {
+	background-color: #252829 !important;
+	color: #b4e4a6 !important;
+	border-left: #b4e4a6;
+}
+
+[data-theme="dark"] .post-title,
+[data-theme="dark"] .post-content,
+[data-theme="dark"] a {
+    color: #6ab7d2;
+}
+
+[data-theme="dark"] .header {
+    background-color: #1a1a1a;
+}
+
+/* Tùy chỉnh các thành phần khác của theme Cactus */
+[data-theme="dark"] .footer,
+[data-theme="dark"] .nav {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px;
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    z-index: 1000;
+}
+
+[data-theme="dark"] .theme-toggle-btn {
+    color: #ffffff;
+}
+
+/*----------------------------- Light mode */
+[data-theme="light"] body {
+    background-color: #f9f4ef;
+    color: #2c2a28;
+}
+[data-theme="light"] blockquote {
+	background-color: #e6e1dc !important;
+	color: #2c2a28 !important;
+	border-left: #5a5653;
+}
+[data-theme="light"] a {
+    color: #2b8c6a !important;
+}
