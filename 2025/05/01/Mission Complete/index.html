@@ -75,6 +75,7 @@
   <a id="menu-icon" href="#" aria-label="القائمة"><i class="fa-solid fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#" aria-label="القائمة"><i class="fa-solid fa-bars fa-lg"></i></a>
   <a id="top-icon-tablet" href="#" aria-label="الأعلى" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <a id="fa-solid fa-chevron-down" href="#" aria-label="الأعلى" onclick="$('html, body').animate({ scrollTop: $(document).height() }, 1000 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-down fa-lg"></i></a>
   <span id="menu">
     <span id="nav">
       <ul>
@@ -99,11 +100,16 @@
         <li><a class="icon" aria-label="Bài tiếp theo" href="/2025/04/30/khibansongdulau/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" aria-label="Về đầu trang" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+
+        <li><a class="icon" aria-label="Về cuối trang" href="#" onclick="$('html, body').animate({scrollTop: $('html, body').get(0).scrollHeight
+                }, 'fast');"><i class="fa-solid fa-chevron-down" aria-hidden="true" onmouseover="$('#i-bottom').toggle();" onmouseout="$('#i-bottom').toggle();"></i></a></li>
+		
         <li><a class="icon" aria-label="Chia sẻ bài viết" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
       </ul>
       <span id="i-prev" class="info" style="display:none;">Bài trước</span>
       <span id="i-next" class="info" style="display:none;">Bài tiếp theo</span>
       <span id="i-top" class="info" style="display:none;">Về đầu trang</span>
+      <span id="i-bottom" class="info" style="display:none;">Về cuối trang</span>
       <span id="i-share" class="info" style="display:none;">Chia sẻ bài viết</span>
     </span>
     <br/>
