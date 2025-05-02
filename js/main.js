@@ -111,7 +111,10 @@ $(document).ready(function() {
     }
   }
 });
-
+  /**
+   * Toogle Dark mode
+   * for Desktop, tablet and mobile.
+   */
 document.addEventListener('DOMContentLoaded', function() {
 	var style = document.querySelector('#invert')
 	if (style == null) {
@@ -128,14 +131,54 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 	
 	var enableDarkMode = function() {
-		style.innerText = 'html,img,pre,#dark-mode-btn{filter:invert(100%)}'
+		style.innerText = `
+        body {
+            background-color: #1d1f21;
+            color: #c9cacc;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .post, .card, .sidebar, .header {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        a {
+            color: #d44d79;
+        }
+        code, pre {
+            background-color: #e8ecef;
+            color: #333333;
+        }
+        .post-title, .post-meta {
+            color: #333333;
+        }
+    `;		
 		btn.classList.remove('light-logo')
 		btn.classList.add('dark-logo')
 		localStorage.darkLight = 'dark'
 		
 	}
 	var disableDarkMode = function() {
-		style.innerText = ''		
+		style.innerText = `
+        body {
+            background-color: #f5f5f5;
+            color: #333333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .post, .card, .sidebar, .header {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        a {
+            color: #d44d79;
+        }
+        blockquote {
+            background-color: #102140;
+            color: #ff7d01;
+        }
+        .post-title, .post-meta {
+            color: #333333;
+        }
+    `;		
 		btn.classList.remove('dark-logo')
 		btn.classList.add('light-logo')
 		localStorage.darkLight = 'light'
@@ -150,6 +193,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 	
 	if (localStorage.darkLight == 'dark')
-		enableDarkMode()
-	
+		enableDarkMode()	
 });
+
