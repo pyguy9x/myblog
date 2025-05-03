@@ -62,33 +62,6 @@ body {
     color: #2b8c6a !important;
 }
 
-/* Gallery */
-/* Gallery */
-.article-gallery
-  margin: 1rem 0
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  .gallery-item
-    display: block
-    overflow: hidden
-    border-radius: 4px
-    transition: transform 0.2s
-    margin: 5px
-    img
-      width: 150px !important
-      height: 120px !important
-      object-fit: cover
-      display: block
-    &:hover
-      transform: scale(1.05)
-
-  @media (max-width: 480px)
-    .gallery-item
-      img
-        width: 120px
-        height: 100px
-	  
 // fancy box
 // hien thi tot tren mobie @media
 @media (max-width: 480px)
@@ -123,3 +96,33 @@ body {
   color: #fff
   background: rgba(0, 0, 0, 0.8)
   padding: 10px
+
+// gallery
+/* Gallery */
+.article-gallery
+  margin: 1rem 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  .gallery-item
+    display: block
+    overflow: hidden
+    border-radius: 4px
+    transition: transform 0.2s
+    margin: 5px
+    position: relative  // Để định vị overlay
+    img
+      width: 150px
+      height: 120px
+      object-fit: cover
+      display: block
+    &:hover
+      transform: scale(1.05)
+      .gallery-title
+        opacity: 1  // Hiển thị tiêu đề khi hover
+
+  .gallery-title
+      position: relative
+      bottom: 0
+      left: 0
+      right: 0

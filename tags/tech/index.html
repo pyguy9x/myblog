@@ -11,7 +11,6 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 	
-	<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Minh Dat Blog">
 <meta property="og:url" content="https://minhngao.io.vn/tags/tech/index.html">
@@ -222,6 +221,22 @@
 
 <!-- utterances Comments -->
 
+
+<!-- LightGallery CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    lightGallery(document.getElementById("lightgallery"), {
+      plugins: [lgZoom, lgThumbnail],
+      speed: 500,
+      thumbnail: true
+    });
+  });
+</script>
     <script src="/js/theme-toggle.js"></script>
 </body>
 </html>

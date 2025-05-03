@@ -19,34 +19,36 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleButton.innerHTML = theme === 'dark' ? '<i class="fa fa-sun"></i>' : '<i class="fa fa-moon"></i>';
     }
 });
-// Hien thi album
-$(document).ready(function() {
-    $('.article-gallery').justifiedGallery({
-        rowHeight: 120,
-        margins: 5,
-        lastRow: 'justify'
-    });
-});
-// Zoom  ảnh khi click
+// -------------------------Hien thi album
 $(document).ready(function() {
     // Khởi tạo Justified Gallery cho trang gallery
-    $('.article-gallery').justifiedGallery({
-        rowHeight: 150,
-        margins: 5,
-        lastRow: 'justify'
-    });
+	if (typeof $.fn.justifiedGallery !== 'undefined') {
+        $('.article-gallery').justifiedGallery({
+            rowHeight: 120,
+            margins: 5,
+            lastRow: 'justify'
+        });
 
+        $('article .article-gallery').each(function() {
+            $(this).justifiedGallery({
+                rowHeight: 120,
+                margins: 5,
+                lastRow: 'justify'
+            });
+        });
+    } else {
+        console.error('Justified Gallery not loaded!');
+    }
     // Kích hoạt FancyBox cho mọi ảnh trong bài viết
-    $('article img').each(function() {
+$('article img').each(function() {
         var $img = $(this);
         var src = $img.attr('src');
         var alt = $img.attr('alt') || 'Ảnh bài viết';
-        
-        // Kiểm tra nếu ảnh chưa được bọc trong thẻ <a>
-        if (!$img.parent().is('a')) {
-            // Xử lý cả ảnh local và URL
-            var href = src.startsWith('http') ? src : '<%- url_for("' + src + '") %>';
-            $img.wrap(`<a href="${src}" data-fancybox="post" data-caption="${alt}"></a>`);
+        if (!$img.parent().is('a') || !$img.closest('.article-gallery').length) {
+            $img.wrap(`<a class="gallery-item" href="${src}" data-fancybox="post" data-caption="${alt}"></a>`);
+            if (!$img.closest('.article-gallery').length) {
+                $img.closest('p').wrap('<div class="article-gallery"></div>');
+            }
         }
     });
 
