@@ -1592,7 +1592,11 @@ code {
   padding: 0 5px;
   border: 1px dotted #908d8d;
   border-radius: 2px;
-  font-family: 'Source Code Pro', 'Vazir', monospace !important;
+  font-family: 'Fira Code', monospace;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   -webkit-border-radius: 2px;
 }
 .highlight {
