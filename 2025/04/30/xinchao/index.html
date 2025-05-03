@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+	
 	<link rel="stylesheet" href="/css/dark-mode.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	
+	<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
     <meta name="description" content="Lý do mình lập trang web này  [x] Tìm thấy nơi chia sẻ kiến thức [ ] Ai làm cũng được [x] Free. Không tốn phí [x] Thao tác tổ chức bài viết bá đạo [x] Tùy biến giao diện theo ý thích [ ] Có cảm hứng đ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Entry đầu tiên - Làm quen Markdown">
@@ -14,15 +19,14 @@
 <meta property="og:site_name" content="Minh Dat Blog">
 <meta property="og:description" content="Lý do mình lập trang web này  [x] Tìm thấy nơi chia sẻ kiến thức [ ] Ai làm cũng được [x] Free. Không tốn phí [x] Thao tác tổ chức bài viết bá đạo [x] Tùy biến giao diện theo ý thích [ ] Có cảm hứng đ">
 <meta property="og:locale" content="vi_VN">
-<meta property="og:image" content="https://mdg.imgix.net/assets/images/tux.png?auto=format&amp;fit=clip&amp;q=40&amp;w=100">
-<meta property="og:image" content="https://images.viblo.asia/518eea86-f0bd-45c9-bf38-d5cb119e947d.png">
+<meta property="og:image" content="https://i.imgur.com/5Blbo2n.jpeg">
 <meta property="article:published_time" content="2025-04-29T17:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-03T08:11:00.193Z">
+<meta property="article:modified_time" content="2025-05-03T13:38:38.710Z">
 <meta property="article:author" content="Minh Dat">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="markdown">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mdg.imgix.net/assets/images/tux.png?auto=format&amp;fit=clip&amp;q=40&amp;w=100">
+<meta name="twitter:image" content="https://i.imgur.com/5Blbo2n.jpeg">
     
     
       
@@ -100,6 +104,8 @@
        --><li><a href="/search/">Tìm kiếm</a></li><!--
      --><!--
        --><li><a href="/about/">Giới thiệu</a></li><!--
+     --><!--
+       --><li><a href="/gallery/">Thư viện</a></li><!--
      -->
       </ul>
     </span>
@@ -323,6 +329,8 @@ Code:</p>
         
           <li><a href="/about/">Giới thiệu</a></li>
         
+          <li><a href="/gallery/">Thư viện</a></li>
+        
       </ul>
     </div>
 
@@ -387,6 +395,8 @@ Code:</p>
        --><li><a href="/search/">Tìm kiếm</a></li><!--
      --><!--
        --><li><a href="/about/">Giới thiệu</a></li><!--
+     --><!--
+       --><li><a href="/gallery/">Thư viện</a></li><!--
      -->
       </ul>
     </nav>
@@ -405,11 +415,14 @@ Code:</p>
   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
 
 
+
     <!-- jquery -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 
 
+<!-- zoom image when click -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
 
 <!-- clipboard -->

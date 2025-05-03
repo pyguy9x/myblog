@@ -19,3 +19,43 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleButton.innerHTML = theme === 'dark' ? '<i class="fa fa-sun"></i>' : '<i class="fa fa-moon"></i>';
     }
 });
+// Hien thi album
+$(document).ready(function() {
+    $('.article-gallery').justifiedGallery({
+        rowHeight: 120,
+        margins: 5,
+        lastRow: 'justify'
+    });
+});
+// Zoom  ảnh khi click
+$(document).ready(function() {
+    // Khởi tạo Justified Gallery cho trang gallery
+    $('.article-gallery').justifiedGallery({
+        rowHeight: 150,
+        margins: 5,
+        lastRow: 'justify'
+    });
+
+    // Kích hoạt FancyBox cho mọi ảnh trong bài viết
+    $('article img').each(function() {
+        var $img = $(this);
+        var src = $img.attr('src');
+        var alt = $img.attr('alt') || 'Ảnh bài viết';
+        
+        // Kiểm tra nếu ảnh chưa được bọc trong thẻ <a>
+        if (!$img.parent().is('a')) {
+            // Xử lý cả ảnh local và URL
+            var href = src.startsWith('http') ? src : '<%- url_for("' + src + '") %>';
+            $img.wrap(`<a href="${src}" data-fancybox="post" data-caption="${alt}"></a>`);
+        }
+    });
+
+    // Khởi tạo FancyBox
+    Fancybox.bind('[data-fancybox]', {
+        closeButton: true,
+        // Tùy chỉnh thêm nếu cần
+        Thumbs: {
+            autoStart: true // Hiển thị thumbnail khi có nhiều ảnh
+        }
+    });
+});

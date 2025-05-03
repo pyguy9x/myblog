@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+	
 	<link rel="stylesheet" href="/css/dark-mode.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	
+	<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
     <meta name="description" content="Xem mật khẩu Wifi bằng CMD Xem toàn bộ mạng WiFi đã lưu trong máy bằng cách gõ lệnh sau: 1netsh wlan show profile Ví dụ trong bài này tớ cần tìm mật khẩu của mạng WiFi có SSID là “Le Hoang”, tớ sẽ gõ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Xem mật khẩu Wifi bằng CMD">
@@ -14,13 +19,13 @@
 <meta property="og:site_name" content="Minh Dat Blog">
 <meta property="og:description" content="Xem mật khẩu Wifi bằng CMD Xem toàn bộ mạng WiFi đã lưu trong máy bằng cách gõ lệnh sau: 1netsh wlan show profile Ví dụ trong bài này tớ cần tìm mật khẩu của mạng WiFi có SSID là “Le Hoang”, tớ sẽ gõ">
 <meta property="og:locale" content="vi_VN">
-<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8D4DNC085H15Ort6LktRytPEiWl0ujVHha_1_uKQIM2O_5sYN0Qkv7mvy-yB1TxA1rS86UA2Q7dEorcqMBJIw4OtF_ag5jLnnXiY6nd0mVOzMuL4H59jrHuNQicZ1yFId5D5M-TdrKJ8/s320/pass+wf.png">
+<meta property="og:image" content="https://minhngao.io.vn/images/romvang.jpg">
 <meta property="article:published_time" content="2025-05-02T17:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-03T02:23:01.371Z">
+<meta property="article:modified_time" content="2025-05-03T13:41:26.265Z">
 <meta property="article:author" content="Minh Dat">
 <meta property="article:tag" content="tech">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8D4DNC085H15Ort6LktRytPEiWl0ujVHha_1_uKQIM2O_5sYN0Qkv7mvy-yB1TxA1rS86UA2Q7dEorcqMBJIw4OtF_ag5jLnnXiY6nd0mVOzMuL4H59jrHuNQicZ1yFId5D5M-TdrKJ8/s320/pass+wf.png">
+<meta name="twitter:image" content="https://minhngao.io.vn/images/romvang.jpg">
     
     
       
@@ -98,6 +103,8 @@
        --><li><a href="/search/">Tìm kiếm</a></li><!--
      --><!--
        --><li><a href="/about/">Giới thiệu</a></li><!--
+     --><!--
+       --><li><a href="/gallery/">Thư viện</a></li><!--
      -->
       </ul>
     </span>
@@ -105,7 +112,7 @@
     <span id="actions">
       <ul>
         
-        <li><a class="icon" aria-label="Bài trước" href="/2025/05/03/highland/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Bài trước" href="/2025/05/03/testgallery/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" aria-label="Bài tiếp theo" href="/2025/05/01/Logs/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -225,6 +232,8 @@
         
           <li><a href="/about/">Giới thiệu</a></li>
         
+          <li><a href="/gallery/">Thư viện</a></li>
+        
       </ul>
     </div>
 
@@ -289,6 +298,8 @@
        --><li><a href="/search/">Tìm kiếm</a></li><!--
      --><!--
        --><li><a href="/about/">Giới thiệu</a></li><!--
+     --><!--
+       --><li><a href="/gallery/">Thư viện</a></li><!--
      -->
       </ul>
     </nav>
@@ -307,11 +318,14 @@
   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
 
 
+
     <!-- jquery -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 
 
+<!-- zoom image when click -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
 
 <!-- clipboard -->

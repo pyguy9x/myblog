@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+	
 	<link rel="stylesheet" href="/css/dark-mode.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	
+	<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
     <meta name="description" content="Trầy trật mãi mới có blog tạm ổn theo ý thích. Cuối cùng cũng xong!  Trình tự: mới nhất trước Lỗi chỉ mục trang -&gt; Đã fix (03-05-2025) pagination: Page %d of %d Lỗi font tiếng Việt: -&gt; Đã fix k">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Debug] Quá trình mình build blog">
@@ -97,6 +102,8 @@
        --><li><a href="/search/">Tìm kiếm</a></li><!--
      --><!--
        --><li><a href="/about/">Giới thiệu</a></li><!--
+     --><!--
+       --><li><a href="/gallery/">Thư viện</a></li><!--
      -->
       </ul>
     </span>
@@ -294,6 +301,8 @@ Tên miền chưa ổn định</p>
         
           <li><a href="/about/">Giới thiệu</a></li>
         
+          <li><a href="/gallery/">Thư viện</a></li>
+        
       </ul>
     </div>
 
@@ -358,6 +367,8 @@ Tên miền chưa ổn định</p>
        --><li><a href="/search/">Tìm kiếm</a></li><!--
      --><!--
        --><li><a href="/about/">Giới thiệu</a></li><!--
+     --><!--
+       --><li><a href="/gallery/">Thư viện</a></li><!--
      -->
       </ul>
     </nav>
@@ -376,11 +387,14 @@ Tên miền chưa ổn định</p>
   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
 
 
+
     <!-- jquery -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 
 
+<!-- zoom image when click -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
 
 <!-- clipboard -->
