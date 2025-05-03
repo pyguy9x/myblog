@@ -1579,7 +1579,7 @@ pre {
   border: 1px dotted #908d8d;
   border-radius: 4px;
   font-size: 13px;
-  font-family: 'Source Code Pro', 'Vazir', monospace !important;
+  font-family: 'JetBrains Mono', monospace;
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
