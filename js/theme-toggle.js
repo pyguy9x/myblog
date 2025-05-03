@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // -------------------------Hien thi album
 $(document).ready(function() {
-    // Khởi tạo Justified Gallery cho trang gallery
-	if (typeof $.fn.justifiedGallery !== 'undefined') {
+    if (typeof $.fn.justifiedGallery !== 'undefined') {
         $('.article-gallery').justifiedGallery({
             rowHeight: 120,
             margins: 5,
@@ -39,8 +38,8 @@ $(document).ready(function() {
     } else {
         console.error('Justified Gallery not loaded!');
     }
-    // Kích hoạt FancyBox cho mọi ảnh trong bài viết
-$('article img').each(function() {
+
+    $('article img').each(function() {
         var $img = $(this);
         var src = $img.attr('src');
         var alt = $img.attr('alt') || 'Ảnh bài viết';
@@ -52,12 +51,14 @@ $('article img').each(function() {
         }
     });
 
-    // Khởi tạo FancyBox
+    $('.gallery-item').each(function() {
+        console.log('Gallery title:', $(this).find('.gallery-title').text());
+    });
+
     Fancybox.bind('[data-fancybox]', {
         closeButton: true,
-        // Tùy chỉnh thêm nếu cần
         Thumbs: {
-            autoStart: true // Hiển thị thumbnail khi có nhiều ảnh
+            autoStart: true
         }
     });
 });
