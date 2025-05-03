@@ -481,7 +481,7 @@ body {
   color: #c9cacc;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Awesome", "Meslo LG", monospace;
+  font-family: "Awesome", "Meslo LG", "Vazir", monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
@@ -1415,7 +1415,7 @@ article .content .caption {
   font-display: swap;
   font-weight: 400;
   font-size: 11.200000000000001px;
-  font-family: "Awesome", "Meslo LG", monospace;
+  font-family: "Awesome", "Meslo LG", "Vazir", monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   text-align: center;
@@ -1516,67 +1516,61 @@ article .content .caption {
   content: ")";
 }
 .highlight {
-  background: #474949;
-  color: #d1d9e1;
+  background: #272822;
+  color: #ddd;
+}
+.highlight .code .tag,
+.highlight .code .keyword,
+.highlight .code .selector-tag,
+.highlight .code .literal,
+.highlight .code .strong,
+.highlight .code .name {
+  color: #f92672;
+}
+.highlight .code .code {
+  color: #66d9ef;
+}
+.highlight .code .class .title {
+  color: #fff;
+}
+.highlight .code .attribute,
+.highlight .code .symbol,
+.highlight .code .regexp,
+.highlight .code .link {
+  color: #bf79db;
+}
+.highlight .code .string,
+.highlight .code .bullet,
+.highlight .code .subst,
+.highlight .code .title,
+.highlight .code .section,
+.highlight .code .emphasis,
+.highlight .code .type,
+.highlight .code .built_in,
+.highlight .code .builtin-name,
+.highlight .code .selector-attr,
+.highlight .code .selector-pseudo,
+.highlight .code .addition,
+.highlight .code .variable,
+.highlight .code .template-tag,
+.highlight .code .template-variable {
+  color: #a6e22e;
 }
 .highlight .code .comment,
-.highlight .code .quote {
-  color: #969896;
-  font-style: italic;
+.highlight .code .quote,
+.highlight .code .deletion,
+.highlight .code .meta {
+  color: #75715e;
 }
 .highlight .code .keyword,
 .highlight .code .selector-tag,
 .highlight .code .literal,
-.highlight .code .type,
-.highlight .code .addition {
-  color: #c9c;
-}
-.highlight .code .number,
-.highlight .code .selector-attr,
-.highlight .code .selector-pseudo {
-  color: #f99157;
-}
-.highlight .code .string,
 .highlight .code .doctag,
-.highlight .code .regexp {
-  color: #8abeb7;
-}
 .highlight .code .title,
-.highlight .code .name,
 .highlight .code .section,
-.highlight .code .built_in {
-  color: #b5bd68;
-}
-.highlight .code .variable,
-.highlight .code .template-variable,
-.highlight .code .selector-id,
-.highlight .code .class .title {
-  color: #fc6;
-}
-.highlight .code .section,
-.highlight .code .name,
-.highlight .code .strong {
+.highlight .code .type,
+.highlight .code .selector-id {
   font-weight: bold;
-}
-.highlight .code .symbol,
-.highlight .code .bullet,
-.highlight .code .subst,
-.highlight .code .meta,
-.highlight .code .link {
-  color: #f99157;
-}
-.highlight .code .deletion {
-  color: #dc322f;
-}
-.highlight .code .formula {
-  background: #eee8d5;
-}
-.highlight .code .attr,
-.highlight .code .attribute {
-  color: #81a2be;
-}
-.highlight .code .emphasis {
-  font-style: italic;
 }
 pre {
   overflow-x: auto;
@@ -1585,7 +1579,7 @@ pre {
   border: 1px dotted #908d8d;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Awesome", "Meslo LG", monospace;
+  font-family: 'Source Code Pro', 'Vazir', monospace;
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
@@ -1606,7 +1600,7 @@ code {
   padding: 10px 15px;
   border-radius: 4px;
   background: #212326;
-  font-family: "Awesome", "Meslo LG", monospace;
+  font-family: 'Source Code Pro', 'Vazir', monospace;
   -webkit-border-radius: 4px;
 }
 .highlight figcaption {
