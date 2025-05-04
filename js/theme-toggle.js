@@ -54,10 +54,7 @@ $(document).ready(function() {
     $('.gallery-item').each(function() {
         console.log('Gallery title:', $(this).find('.gallery-title').text());
     });
-	// Hiển thị tiêu đề trên mobile
-    $('.gallery-item').on('click', function() {
-    $(this).find('.gallery-title').toggleClass('visible');
-});
+
     Fancybox.bind('[data-fancybox]', {
         closeButton: true,
         Thumbs: {
