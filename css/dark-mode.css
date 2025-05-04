@@ -141,6 +141,8 @@ body {
       text-overflow: ellipsis  // Cắt bớt nếu tiêu đề quá dài
       z-index: 10
       display: block
+	  &.visible
+        opacity: 1
 
   @media (max-width: 480px)
     .gallery-item
