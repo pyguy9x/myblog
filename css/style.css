@@ -343,7 +343,7 @@ body .h2 {
 }
 body h3 {
   color: #c9c;
-  text-decoration: underline;
+/*text-decoration: underline*/
   font-weight: bold;
   font-size: 0.9rem;
 }
@@ -447,7 +447,7 @@ h1 {
   margin-bottom: 1rem;
   color: #222;
   line-height: 1.3;
-  border-bottom: 2px solid #eee;
+/*border-bottom: 2px solid #eee;*/
   padding-bottom: 0.3rem;
 }
 h2 {
@@ -465,7 +465,9 @@ h3 {
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #444;
+  display: inline;
+  padding: 0.1em 0.4em;
+  border-radius: 0.3em;
 }
 h4 {
   font-size: 1.2rem;
@@ -480,6 +482,12 @@ h5 {
   font-weight: 500;
   margin-top: 0.8rem;
   color: #666;
+}
+.hl {
+  background-color: #c6c09c; /* Màu vàng nhạt dễ chịu */
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+  color: #222;
 }
 *,
 *:before,
@@ -1156,7 +1164,6 @@ article .content h2:before {
   top: -4px;
   left: -1rem;
   color: #f99157;
-  content: "#";
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -1197,7 +1204,7 @@ article .content blockquote p {
 article .content blockquote:before {
   margin-right: 0.25em;
   color: #ccffb6;
-  content: "\201C";
+  content: "\275B \275B";
   vertical-align: -0.4em;
   font-size: 2em;
   line-height: 0.1em;
