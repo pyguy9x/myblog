@@ -13,6 +13,7 @@ body {
 	background-color: #252829 !important;
 	color: #b4e4a6 !important;
 	border-left: #b4e4a6;
+	border-radius: 0.5em;
 }
 
 [data-theme="dark"] .post-title,
@@ -30,6 +31,11 @@ body {
 [data-theme="dark"] .nav {
     background-color: #1a1a1a;
     color: #ffffff;
+}
+
+[data-theme="dark"] h3 {
+    background-color: #3131319c;
+	color: #c9c;
 }
 
 .theme-toggle-btn {
@@ -58,10 +64,24 @@ body {
 	color: #2c2a28 !important;
 	border-left: #5a5653;
 }
+[data-theme="light"] blockquote::before {
+	color: #825814 !important;
+}
 [data-theme="light"] a {
     color: #2b8c6a !important;
 }
 
+[data-theme="light"] h3 {
+    background-color: #e6e1dc;
+	color: #2c2a28;
+}
+[data-theme="light"] h2 {
+	color: #e65d11fa;
+}
+[data-theme="light"] .hl {
+    background-color: #dfa6e9;
+	color: #2c2a28;
+}
 // fancy box
 // hien thi tot tren mobie @media
 @media (max-width: 480px)
