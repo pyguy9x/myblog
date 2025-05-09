@@ -489,6 +489,64 @@ h5 {
   border-radius: 0.2em;
   color: #222;
 }
+.toast {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  margin: 1em 0;
+  border-left: 4px solid;
+  border-radius: 10px;
+  background-color: #fefefe;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 3em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.toast::before {
+  content: "";
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.2em;
+  height: 1.2em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.toast.warning {
+  border-color: #f44336;
+  background-color: #ffeaea;
+  color: #b71c1c;
+}
+.toast.warning::before {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='orange' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M1 21h22L12 2 1 21zm12-3h-2v2h2v-2zm0-8h-2v6h2v-6z'/></svg>");
+}
+.toast.info {
+  border-color: #2196f3;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+.toast.info::before {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='blue' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M11 9h2V7h-2v2zm0 8h2v-6h-2v6zm1-16C6.48 1 2 5.48 2 11s4.48 10 10 10 10-4.48 10-10S17.52 1 12 1z'/></svg>");
+}
+.toast.success {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
+.toast.success::before {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='green' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/></svg>");
+}
+.toast.error {
+  border-color: #e53935;
+  background-color: #ffebee;
+  color: #b71c1c;
+}
+.toast.error::before {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='red' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z'/></svg>");
+}
 *,
 *:before,
 *:after {
