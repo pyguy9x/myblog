@@ -575,7 +575,7 @@ h5 {
 .post-title {
   font-size: 1rem;
   font-weight: 600;
-  margin: 0;
+  margin-top: 0.5em;
   margin-left: 0.5em;
   line-height: 1.2;
   white-space: nowrap;
@@ -589,7 +589,7 @@ h5 {
 .post-excerpt {
   font-size: 0.85rem;
   color: #888;
-  margin-top: 0;
+  margin-top: 0.5em;
   margin-left: 1em;
   line-height: 1.4;
 }
@@ -1832,7 +1832,7 @@ body.dark {
   font-size: 0.9em;
   margin-left: 0.1em;
   color: #999;
-  margin-top: -0.3em;
+  margin-top: 0.1em;
 }
 input[type="checkbox"] {
   accent-color: #2ecc71;
