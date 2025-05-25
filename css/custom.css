@@ -163,3 +163,10 @@ h5 {
   margin-left: 1em;
   line-height: 1.4;
 }
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+img[loading="lazy"]:not([src=""]) {
+  opacity: 1;
+}
