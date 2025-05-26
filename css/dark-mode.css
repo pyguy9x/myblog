@@ -26,6 +26,13 @@ body {
     background-color: #1a1a1a;
 }
 
+[data-theme="dark"] .post-item {
+    background-color: #2f2f2f57;
+	padding: 0.5em;
+	/* border: 1px solid #e0d9c4; */
+	border-radius: 10px;
+}
+
 /* Tùy chỉnh các thành phần khác của theme Cactus */
 [data-theme="dark"] .footer,
 [data-theme="dark"] .nav {
@@ -59,6 +66,9 @@ body {
     background-color: #f9f4ef;
     color: #1A202C;
 }
+[data-theme="light"] .pagination .page-number {
+    color: #105ef9;
+}
 [data-theme="light"] blockquote {
 	background-color: #e6e1dc !important;
 	color: #2c2a28 !important;
@@ -85,6 +95,18 @@ body {
 [data-theme="light"] code {
     background-color: #dfa6e9;
 	color: #2c2a28;
+}
+[data-theme="light"] .post-item {
+    background-color: #ded1d157;
+	padding: 0.5em;
+	/* border: 1px solid #e0d9c4; */
+	border-radius: 10px;
+}
+[data-theme="light"] .post-excerpt {
+    color: #2c2a28;
+	margin-top: 0.5em;
+    margin-left: 1em;
+    line-height: 1.4;
 }
 // fancy box
 // hien thi tot tren mobie @media

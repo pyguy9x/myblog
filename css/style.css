@@ -1908,3 +1908,15 @@ footer {
 .content {
   padding-bottom: 6rem;
 }
+.archive-list li {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.archive-list li:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px);
+}
