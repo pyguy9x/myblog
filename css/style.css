@@ -1855,3 +1855,39 @@ input[type="checkbox"] {
 .pinned-posts .post-item:last-child {
   border-bottom: none;
 }
+.code-container {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.code-toolbar {
+  background: rgba(47,47,47,0.184);
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  text-align: right;
+}
+.copy-btn {
+  background: rgba(47,47,47,0.184);
+  border: none;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgba(243,243,243,0.953);
+  transition: all 0.3s ease;
+}
+.copy-btn:hover {
+  background: rgba(197,197,197,0.184);
+}
+pre,
+code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+figure.highlight {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
