@@ -573,13 +573,13 @@ h5 {
 .post-title {
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 0.25em;
+  margin-top: 0.5em;
   margin-left: 0.5em;
   line-height: 1.2;
-  white-space: normal /* ✅ Cho phép xuống dòng */;
-  word-break: break-word /* ✅ Tự ngắt từ dài */;
-  overflow-wrap: break-word /* ✅ Ngắt khi chạm giới hạn */;
-  max-width: 100% /* ✅ Không vượt vùng cha */;
+  max-width: 100%;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 .post-title a {
   color: #f0a;
