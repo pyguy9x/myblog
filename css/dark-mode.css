@@ -82,6 +82,10 @@ body {
     background-color: #dfa6e9;
 	color: #2c2a28;
 }
+[data-theme="light"] code {
+    background-color: #dfa6e9;
+	color: #2c2a28;
+}
 // fancy box
 // hien thi tot tren mobie @media
 @media (max-width: 480px)
