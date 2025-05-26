@@ -57,7 +57,7 @@ body {
 /*----------------------------- Light mode */
 [data-theme="light"] body {
     background-color: #f9f4ef;
-    color: #2c2a28;
+    color: #1A202C;
 }
 [data-theme="light"] blockquote {
 	background-color: #e6e1dc !important;
@@ -68,7 +68,7 @@ body {
 	color: #825814 !important;
 }
 [data-theme="light"] a {
-    color: #2b8c6a !important;
+    color: #2B6CB0 !important;
 }
 
 [data-theme="light"] h3 {
