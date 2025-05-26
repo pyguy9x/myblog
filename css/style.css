@@ -1891,3 +1891,20 @@ figure.highlight {
   border-radius: 6px;
   overflow: hidden;
 }
+/* Chừa khoảng cho pagination tránh bị footer đè */
+.pagination {
+  margin-bottom: 4rem;
+}
+/* Đảm bảo footer không che nội dung */
+footer {
+  position: relative;
+  z-index: 0;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+/* Nếu dùng fixed height, có thể chừa padding-bottom ở content */
+.content {
+  padding-bottom: 6rem;
+}
