@@ -31,6 +31,9 @@ body {
 	padding: 0.5em;
 	/* border: 1px solid #e0d9c4; */
 	border-radius: 10px;
+	width: 100%;
+    display: block; /* hoặc flex nếu cần, nhưng cần wrap */
+    flex-wrap: wrap; /* nếu đang dùng flex */
 }
 
 /* Tùy chỉnh các thành phần khác của theme Cactus */
