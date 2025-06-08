@@ -266,7 +266,7 @@ img[loading="lazy"]:not([src=""]) {
   display: inline-block;
   margin: 0.3rem;
   padding: 0.4rem 0.8rem;
-  background: #aba4a4;
+  background: #cacaca;
   border: none;
   border-radius: 999px;
   cursor: pointer;
