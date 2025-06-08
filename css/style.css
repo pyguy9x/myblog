@@ -611,18 +611,6 @@ img[loading="lazy"]:not([src=""]) {
   margin-bottom: 1rem;
   width: 100%;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-.grid-item {
-  position: relative;
-}
-.grid-item img {
-  width: 100%;
-  border-radius: 8px;
-}
 .caption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
@@ -704,6 +692,35 @@ img[loading="lazy"]:not([src=""]) {
 .tag-button:hover {
   background: #f99157;
   color: #000;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cột đều nhau */
+  }
+}
+.grid-item {
+  text-align: center;
+}
+.grid-item img {
+  width: 100%;
+  aspect-ratio: 1/1; /* ảnh vuông */
+  object-fit: cover;
+  border-radius: 8px; /* bo góc nhẹ cho đẹp */
+}
+.fancybox-caption {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  backdrop-filter: blur(2px); /* nền mờ nhẹ */
 }
 *,
 *:before,
