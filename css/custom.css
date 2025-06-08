@@ -231,7 +231,7 @@ img[loading="lazy"]:not([src=""]) {
   margin: 2rem 0;
 }
 #searchBox {
-  padding: 10px 30px;
+  padding: 10px 40px;
   font-size: 16px;
   width: 80%;
   max-width: 400px;
@@ -282,8 +282,10 @@ img[loading="lazy"]:not([src=""]) {
 /* Hiển thị đẹp trên mobile và màn hình nhỏ */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  align-items: start;
 }
 /* Điều chỉnh cụ thể cho màn hình nhỏ (iPhone 11) */
 @media screen and (max-width: 768px) {
@@ -292,6 +294,8 @@ img[loading="lazy"]:not([src=""]) {
   }
 }
 .grid-item {
+  max-width: 180px; /* giữ kích thước ổn định */
+  margin: 0 auto;
   text-align: center;
 }
 .grid-item img {
@@ -342,10 +346,52 @@ img[loading="lazy"]:not([src=""]) {
 }
 .search-icon {
   position: absolute;
-  top: 37%;
+  top: 20px;
   left: 50px; /* Canh sát bên trái */
   transform: translateY(-50%);
   color: #999;
   font-size: 18px;
   pointer-events: none; /* Để click qua icon vẫn focus input */
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  max-width: 90%;
+  border-radius: 12px;
+  text-align: center;
+}
+.popup-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.popup-btn {
+  margin-top: 1em;
+  display: inline-block;
+  background-color: #f69;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.popup-close {
+  margin-top: 0.8em;
+  background: #eee;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }

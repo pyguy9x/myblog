@@ -128,6 +128,15 @@
     <!-- Thêm mạng xã hội khác nếu cần -->
   </div>
 </div>
+<!-- POPUP -->
+<div id="customPopup" class="popup-overlay" style="display: none;">
+  <div class="popup-content">
+    <img id="popupImage" src="" alt="Ảnh sản phẩm">
+    <div id="popupCaption"></div>
+    <a id="popupLink" href="#" target="_blank" class="popup-btn">Xem sản phẩm</a>
+    <button onclick="closePopup()" class="popup-close">Đóng</button>
+  </div>
+</div>
 
 <div>
 <h2> Mời bạn nhập tên sản phẩm vào ô tìm kiếm</h2>
@@ -152,9 +161,9 @@
   
     <button class="tag-button" data-tag="hocsinh">hocsinh</button>
   
-    <button class="tag-button" data-tag="anvat">anvat</button>
-  
     <button class="tag-button" data-tag="giadung">giadung</button>
+  
+    <button class="tag-button" data-tag="anvat">anvat</button>
   
 </div>
 
@@ -165,6 +174,7 @@
          data-tags="dongho">
 
       <!-- Ảnh sản phẩm chính --> 
+	  <!-- Dùng fancybox -->
 	  <div class="thumbnail-wrapper">
 		<a href="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXM23ref_FV99_VW_34FR+watch-case-46-aluminum-jetblack-cell-s10_VW_34FR+watch-face-46-aluminum-jetblack-s10_VW_34FR?wid=2000&amp;hei=2000&amp;fmt=png-alpha&amp;.v=TnVrdDZWRlZzTURKbHFqOGh0dGpVRW5TeWJ6QW43NUFnQ2V4cmRFc1VnYUdWejZ5THhpKzJwRmRDYlhxN2o5aWp3UWRQeU9ENTVkdnpWZ2VCQ1JYVkF1Z0RaeFB5LzRxZEliRVE2WkswOW5YNUh6UG9VcVpLK2VQampYMHFQR0ZraFRqYm9IdFcyZHNBc3g5MFNqQkIxQ3RPTys0V0JDL1E3U0xPSTVXcjNNRTJsZmRCaDlhOEFTanNHbHplV0g1TFdnME1abzd0T2pyYnVZRDQrdEQ0YzdFdjdCLy8xdmNhVXhrb3pzSnBmOA" data-fancybox="gallery-" 
 		data-caption='
@@ -174,8 +184,8 @@
             style="display:inline-block; margin-top: 10px; background:#ff6699; color:#fff; padding:8px 16px; border-radius:999px; text-decoration:none; font-weight:bold;">
            Xem sản phẩm
            </a>
-        </div>'>
-		  <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXM23ref_FV99_VW_34FR+watch-case-46-aluminum-jetblack-cell-s10_VW_34FR+watch-face-46-aluminum-jetblack-s10_VW_34FR?wid=2000&amp;hei=2000&amp;fmt=png-alpha&amp;.v=TnVrdDZWRlZzTURKbHFqOGh0dGpVRW5TeWJ6QW43NUFnQ2V4cmRFc1VnYUdWejZ5THhpKzJwRmRDYlhxN2o5aWp3UWRQeU9ENTVkdnpWZ2VCQ1JYVkF1Z0RaeFB5LzRxZEliRVE2WkswOW5YNUh6UG9VcVpLK2VQampYMHFQR0ZraFRqYm9IdFcyZHNBc3g5MFNqQkIxQ3RPTys0V0JDL1E3U0xPSTVXcjNNRTJsZmRCaDlhOEFTanNHbHplV0g1TFdnME1abzd0T2pyYnVZRDQrdEQ0YzdFdjdCLy8xdmNhVXhrb3pzSnBmOA" alt="Apple Watch Ultra" width="100" height="auto">
+        </div>'>		
+		   <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXM23ref_FV99_VW_34FR+watch-case-46-aluminum-jetblack-cell-s10_VW_34FR+watch-face-46-aluminum-jetblack-s10_VW_34FR?wid=2000&amp;hei=2000&amp;fmt=png-alpha&amp;.v=TnVrdDZWRlZzTURKbHFqOGh0dGpVRW5TeWJ6QW43NUFnQ2V4cmRFc1VnYUdWejZ5THhpKzJwRmRDYlhxN2o5aWp3UWRQeU9ENTVkdnpWZ2VCQ1JYVkF1Z0RaeFB5LzRxZEliRVE2WkswOW5YNUh6UG9VcVpLK2VQampYMHFQR0ZraFRqYm9IdFcyZHNBc3g5MFNqQkIxQ3RPTys0V0JDL1E3U0xPSTVXcjNNRTJsZmRCaDlhOEFTanNHbHplV0g1TFdnME1abzd0T2pyYnVZRDQrdEQ0YzdFdjdCLy8xdmNhVXhrb3pzSnBmOA" alt="Apple Watch Ultra" width="100" height="auto">
         </a>
 		
 	  <!-- Thêm coupon -->
@@ -195,6 +205,7 @@
          data-tags="mevabe,hocsinh">
 
       <!-- Ảnh sản phẩm chính --> 
+	  <!-- Dùng fancybox -->
 	  <div class="thumbnail-wrapper">
 		<a href="https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m73mwb1okh949e@resize_w900_nl.webp" data-fancybox="gallery-" 
 		data-caption='
@@ -204,8 +215,8 @@
             style="display:inline-block; margin-top: 10px; background:#ff6699; color:#fff; padding:8px 16px; border-radius:999px; text-decoration:none; font-weight:bold;">
            Xem sản phẩm
            </a>
-        </div>'>
-		  <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m73mwb1okh949e@resize_w900_nl.webp" alt="Bảng chữ số âm vần cho bé" width="100" height="auto">
+        </div>'>		
+		   <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m73mwb1okh949e@resize_w900_nl.webp" alt="Bảng chữ số âm vần cho bé" width="100" height="auto">
         </a>
 		
 	  <!-- Thêm coupon -->
@@ -221,10 +232,42 @@
     </div>
   
     <div class="grid-item"
+         data-title="bàn học"
+         data-tags="giadung,hocsinh">
+
+      <!-- Ảnh sản phẩm chính --> 
+	  <!-- Dùng fancybox -->
+	  <div class="thumbnail-wrapper">
+		<a href="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgaz0si903jr50.webp" data-fancybox="gallery-" 
+		data-caption='
+         <div style="text-align: center">
+           <div>Bàn học học sinh có thể gấp gọn</div>
+           <a href="https://shopee.vn/ten-san-pham" target="_blank"
+            style="display:inline-block; margin-top: 10px; background:#ff6699; color:#fff; padding:8px 16px; border-radius:999px; text-decoration:none; font-weight:bold;">
+           Xem sản phẩm
+           </a>
+        </div>'>		
+		   <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgaz0si903jr50.webp" alt="Bàn học" width="100" height="auto">
+        </a>
+		
+	  <!-- Thêm coupon -->
+  
+</div>
+
+      <!-- Các ảnh thực tế -->
+      
+
+      <!-- Tiêu đề -->
+      <div><a href="https://shopee.vn/ten-san-pham" target="_blank">Bàn học</a></div>
+
+    </div>
+  
+    <div class="grid-item"
          data-title="ô mai sấu giòn"
          data-tags="anvat">
 
       <!-- Ảnh sản phẩm chính --> 
+	  <!-- Dùng fancybox -->
 	  <div class="thumbnail-wrapper">
 		<a href="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llqgh90ceyn345.webp" data-fancybox="gallery-" 
 		data-caption='
@@ -234,8 +277,8 @@
             style="display:inline-block; margin-top: 10px; background:#ff6699; color:#fff; padding:8px 16px; border-radius:999px; text-decoration:none; font-weight:bold;">
            Xem sản phẩm
            </a>
-        </div>'>
-		  <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llqgh90ceyn345.webp" alt="Ô mai sấu giòn" width="100" height="auto">
+        </div>'>		
+		   <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llqgh90ceyn345.webp" alt="Ô mai sấu giòn" width="100" height="auto">
         </a>
 		
 	  <!-- Thêm coupon -->
@@ -269,6 +312,7 @@
          data-tags="mevabe">
 
       <!-- Ảnh sản phẩm chính --> 
+	  <!-- Dùng fancybox -->
 	  <div class="thumbnail-wrapper">
 		<a href="https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m73mwb1okh949e@resize_w900_nl.webp" data-fancybox="gallery-" 
 		data-caption='
@@ -278,8 +322,8 @@
             style="display:inline-block; margin-top: 10px; background:#ff6699; color:#fff; padding:8px 16px; border-radius:999px; text-decoration:none; font-weight:bold;">
            Xem sản phẩm
            </a>
-        </div>'>
-		  <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m73mwb1okh949e@resize_w900_nl.webp" alt="sản phẩm 2" width="100" height="auto">
+        </div>'>		
+		   <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m73mwb1okh949e@resize_w900_nl.webp" alt="sản phẩm 2" width="100" height="auto">
         </a>
 		
 	  <!-- Thêm coupon -->
@@ -291,36 +335,6 @@
 
       <!-- Tiêu đề -->
       <div><a href="https://shopee.vn/product/199282415/20053164967" target="_blank">sản phẩm 2</a></div>
-
-    </div>
-  
-    <div class="grid-item"
-         data-title="bàn học"
-         data-tags="giadung,hocsinh">
-
-      <!-- Ảnh sản phẩm chính --> 
-	  <div class="thumbnail-wrapper">
-		<a href="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgaz0si903jr50.webp" data-fancybox="gallery-" 
-		data-caption='
-         <div style="text-align: center">
-           <div>Bàn học học sinh có thể gấp gọn</div>
-           <a href="https://shopee.vn/ten-san-pham" target="_blank"
-            style="display:inline-block; margin-top: 10px; background:#ff6699; color:#fff; padding:8px 16px; border-radius:999px; text-decoration:none; font-weight:bold;">
-           Xem sản phẩm
-           </a>
-        </div>'>
-		  <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgaz0si903jr50.webp" alt="Bàn học" width="100" height="auto">
-        </a>
-		
-	  <!-- Thêm coupon -->
-  
-</div>
-
-      <!-- Các ảnh thực tế -->
-      
-
-      <!-- Tiêu đề -->
-      <div><a href="https://shopee.vn/ten-san-pham" target="_blank">Bàn học</a></div>
 
     </div>
   
@@ -359,6 +373,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+</script>
+
+<script>
+  function showPopup(imageSrc, caption, productUrl) {
+    document.getElementById('popupImage').src = imageSrc;
+    document.getElementById('popupCaption').innerText = caption;
+    document.getElementById('popupLink').href = productUrl;
+    document.getElementById('customPopup').style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('customPopup').style.display = 'none';
+  }
 </script>
 
 
