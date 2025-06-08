@@ -257,3 +257,24 @@ img[loading="lazy"]:not([src=""]) {
   font-size: 0.9rem;
   color: #888;
 }
+#tag-filter {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.tag-button {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  background: #aba4a4;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  color: #000;
+}
+.tag-button.active,
+.tag-button:hover {
+  background: #f99157;
+  color: #000;
+}
