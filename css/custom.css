@@ -231,7 +231,7 @@ img[loading="lazy"]:not([src=""]) {
   margin: 2rem 0;
 }
 #searchBox {
-  padding: 10px 15px;
+  padding: 10px 30px;
   font-size: 16px;
   width: 80%;
   max-width: 400px;
@@ -309,4 +309,43 @@ img[loading="lazy"]:not([src=""]) {
   bottom: 0;
   text-align: center;
   backdrop-filter: blur(2px); /* nền mờ nhẹ */
+}
+.thumbnail-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.coupon-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 6px;
+  background-color: #ff69b4; /* Hồng */
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 30px; /* Viên thuốc */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 1em auto;
+}
+.search-wrapper input {
+  width: 100%;
+  padding: 10px 10px 10px 36px; /* Dành chỗ cho icon */
+  border: 1px solid #ccc;
+  border-radius: 50px; /* Làm tròn dạng viên thuốc */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.search-icon {
+  position: absolute;
+  top: 37%;
+  left: 50px; /* Canh sát bên trái */
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  pointer-events: none; /* Để click qua icon vẫn focus input */
 }
